@@ -1,5 +1,5 @@
 body{
-    background: url("images/fondo_cielo.jpg");
+    background: url("images/fondo_cielo2.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center top;
@@ -46,4 +46,16 @@ input:focus{
     width: 6rem;
     height: 2rem;
     border: none;
+}
+.img-soleado{
+    width: 6rem;
+    height: 5rem;
+}
+.div-detalle{
+    display: flex;
+}
+
+.temperature{
+    font-weight: bold;
+    font-size: 3.5rem;
 }
