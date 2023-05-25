@@ -1,61 +1,105 @@
-body{
-    background: url("images/fondo_cielo2.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center top;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Space Mono', monospace;
+body {
+  background: url("images/fondo_cielo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Space Mono", monospace;
+  color: #f6f6f6;
 }
-input,button,label{
-    font-size: 1.1rem;
-    color: #494545;
+input,
+button,
+label {
+  font-size: 1.1rem;
 }
-.information{
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40rem;
-    height: 25rem;
-    background-color:#fff;
-    /* opacity: 0.5; */
-    background-color: rgba(255, 255,255, 0.5);
+h3{
+    font-size: 2rem;
+    padding-top: 1.5rem;
 }
-.search{
-    transition-duration: 3s;
+.information {
+  text-align: center;
+  position: relative;
+  top: 18rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 26rem;
+  /* opacity: 0.5; */
+  background-color: rgba(200, 199, 226, 0.5);
 }
-h5{
-    font-size: 1.3rem;
+/* .search {
+  transition-duration: 3s;
+} */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
-
-#city{
-    width:15rem;
-    height: 1.7rem;
-	border:none;
-	border-radius:3px;
-	background-color:#f6f6f6;
+.temperature{
+    font-size: 12rem;
 }
-input:focus{
-    outline:none;
-}
-.btn-buscar{
-    margin-top: 2rem;
-    width: 6rem;
-    height: 2rem;
-    border: none;
-}
-.img-soleado{
-    width: 6rem;
-    height: 5rem;
-}
-.div-detalle{
-    display: flex;
+h5 {
+  font-size: 1.3rem;
 }
 
+#city {
+  width: 15rem;
+  height: 1.7rem;
+  border: none;
+  border-radius: 3px;
+}
+input:focus {
+  outline: none;
+}
+.btn-buscar {
+  margin-top: 2rem;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+}
+.div-detalle {
+  display: flex;
+  
+}
+.div-1{
+    justify-self: end;
+    align-self: center;
+}
+.div-2 {
+  justify-self: start;
+
+}
+.img-temperature{
+    width: 5rem;
+    height: 4.8rem;
+}
 .temperature{
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+}
+.location{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.img-ubication{
+    width: 1.4rem;
+    height: 1.5rem;
+    padding-right: 0.6rem;
+}
+.grid-days{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* gap: 1rem; */
+    color: #37384d;
+}
+.img-sub-weather{
+    width: 5rem;
+    height: 4rem;
+}
+.sub-temperature{
+    background-color: rgba(215, 213, 223, 0.5);
+    border-radius: 0.2rem;
+    height: 11.4rem;
 }

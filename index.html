@@ -11,16 +11,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Clima</title>
+    <link href="images/icono.png" rel="icon" type="image/png" />
   </head>
   <body>
     <div class="information">
       <section class="search">
-        <h3>Detalle de Clima</h3>
-        <div class="div-detalle">
-            <img class="img-soleado" src="images/soleado.png" alt="soleado" />
-            <p class="temperature">32°</p>
+        <h3>DETALLE DEL CLIMA</h3>
+        <div class="grid">
+          <div class="div-1">
+            <img class="img-temperature" src="images/soleado.png" alt="temperature" />
           </div>
+          <div class="div-2">
+            <div class="temperature">32°C</div>
+            <div class="location">
+              <img
+                class="img-ubication"
+                src="images/ubicacion.png"
+                alt=""
+              />Lima
+            </div>
+          </div>
+        </div>  
+        <div class="grid-days">
+          <div-days class="sub-temperature">
+            <p>Lunes</p>
+            <img class="img-sub-weather" src="images/nube.png" alt="">
+            <p>23 °C</p>
+          </div-days>
+          <div-days class="sub-temperature">
+            <p>Martes</p>
+            <img class="img-sub-weather" src="images/semi-soleado.png" alt="">
+            <p>23 °C</p>
+          </div-days>
+          <div-days class="sub-temperature">
+            <p>Miercoles</p>
+            <img class="img-sub-weather" src="images/viento.png" alt="">
+            <p>23 °C</p>
+          </div-days>
+          <div-days class="sub-temperature" >
+            <p>Jueves</p>
+            <img class="img-sub-weather" src="images/soleado.png" alt="">
+            <p>23 °C</p>
+          </div-days>
+          <div-days class="sub-temperature">
+            <p>Viernes</p>
+            <img class="img-sub-weather" src="images/agua.png" alt="">
+            <p>23 °C</p>
+          </div-days>
+        </div>
       </section>
     </div>
   </body>
