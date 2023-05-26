@@ -20,16 +20,57 @@
 // }
 
 //--------------------------------//
-const btn_buscar = document.querySelector(".btn-buscar"); 
+const btn_buscar = document.querySelector(".btn-buscar");
 const txt_cuidad = document.querySelector("#city");
 const search = document.querySelector(".search");
 const information = document.querySelector(".information");
+const grid_days = document.querySelector(".grid-days");
 
-btn_buscar.addEventListener("click",function(){
-    search.style.display = 'none';
-    information.innerHTML=`<h5>Nuevo eleemnto</h5>`;
-})
+// btn_buscar.addEventListener("click",function(){
+//     search.style.display = 'none';
+//     information.innerHTML=`<h5>Nuevo eleemnto</h5>`;
+// })
+const fecha = String(new Date().getDay())
 
-
-
-
+const objeto = {0: "Domingo", 1: "Lunes", 2: "Martes", 3: "Miércoles", 4: "Jueves", 5: "Viernes", 6: "Sábado" };
+let encontrado = false;
+let claves = [];
+for (let clave in objeto) {
+  if (objeto.hasOwnProperty(clave)  ) {
+    if (encontrado) {
+      let valor = objeto[clave];
+      claves.push(valor);
+    }
+    if (clave === fecha) encontrado = true;
+  }
+}
+for(let i in objeto){
+    if(claves.length < 6) claves.push(objeto[i]); 
+}
+grid_days.innerHTML=`
+<div-days class="sub-temperature">
+        <p>${claves[0]}</p>
+        <img class="img-sub-weather" src="images/nube.png" alt="">
+        <p>23 °C</p>
+      </div-days>
+      <div-days class="sub-temperature">
+        <p>${claves[1]}</p>
+        <img class="img-sub-weather" src="images/semi-soleado.png" alt="">
+        <p>23 °C</p>
+      </div-days>
+      <div-days class="sub-temperature">
+        <p>${claves[2]}</p>
+        <img class="img-sub-weather" src="images/viento.png" alt="">
+        <p>23 °C</p>
+      </div-days>
+      <div-days class="sub-temperature" >
+        <p>${claves[3]}</p>
+        <img class="img-sub-weather" src="images/soleado.png" alt="">
+        <p>23 °C</p>
+      </div-days>
+      <div-days class="sub-temperature">
+        <p>${claves[4]}</p>
+        <img class="img-sub-weather" src="images/agua.png" alt="">
+        <p>23 °C</p>
+      </div-days>
+`
