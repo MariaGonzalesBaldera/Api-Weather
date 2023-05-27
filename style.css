@@ -12,6 +12,19 @@ input,
 button,
 label {
   font-size: 1.1rem;
+  color: #37384d;
+}
+.search0{
+  padding-top: 2rem;
+}
+.search{
+  display: none;
+}
+.info{
+  color: #37384d;
+}
+.div-intro{
+  padding-top: 2rem;
 }
 h3{
     font-size: 2rem;
@@ -24,7 +37,7 @@ h3{
   left: 45%;
   transform: translate(-50%, -50%);
   width: 40rem;
-  height: 26rem;
+  height: 27rem;
   /* opacity: 0.5; */
   background-color: rgba(200, 199, 226, 0.5);
 }
@@ -53,10 +66,11 @@ input:focus {
   outline: none;
 }
 .btn-buscar {
-  margin-top: 2rem;
-  width: 6rem;
+  margin-top: 3rem;
+  width: 8rem;
   height: 2rem;
   border: none;
+  border-radius: 3px;
 }
 .div-detalle {
   display: flex;
@@ -68,7 +82,6 @@ input:focus {
 }
 .div-2 {
   justify-self: start;
-
 }
 .img-temperature{
     width: 5rem;
@@ -88,18 +101,18 @@ input:focus {
     padding-right: 0.6rem;
 }
 .grid-days{
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     /* gap: 1rem; */
     color: #37384d;
 }
 .img-sub-weather{
-    width: 5rem;
+    width: 4rem;
     height: 4rem;
 }
 .sub-temperature{
     background-color: rgba(215, 213, 223, 0.5);
     border-radius: 0.2rem;
-    height: 11.4rem;
+    height: 11rem;
 }

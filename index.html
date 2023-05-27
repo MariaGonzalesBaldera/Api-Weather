@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&family=Poppins:wght@200&family=Space+Mono&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     
     <title>Clima</title>
@@ -17,25 +18,35 @@
   </head>
   <body>
     <div class="information">
+      <!-- show weather with city -->
+      <section class="search0">
+        <h3>Conoce el clima de tu ciudad</h3>
+        <div class="info">
+          <p>Ingrese la ciudad de donde quiera saber su clima</p>
+        </div>  
+        <div class="div-intro">
+          <label for="buscar">Ingrese ciudad: </label>
+          <input type="text" id="city"><br>
+          <button class="btn-buscar">
+            Buscar
+          </button>
+        </div>
+      </section>
       <section class="search">
         <h3>DETALLE DEL CLIMA</h3>
         <div class="grid">
           <div class="div-1">
-            <img class="img-temperature" src="images/soleado.png" alt="temperature" />
+            <img class="img-temperature" src="images/soleado.png" alt="temperature" />  
           </div>
           <div class="div-2">
-            <div class="temperature">32°C</div>
+            <div class="temperature"></div>
             <div class="location">
-              <img
-                class="img-ubication"
-                src="images/ubicacion.png"
-                alt=""
-              />Lima
+              <p class="ubi"> <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></p>
             </div>
           </div>
         </div>  
         <div class="grid-days">
-          
+          <p class="tem-next-1"></p>
         </div>
       </section>
     </div>
